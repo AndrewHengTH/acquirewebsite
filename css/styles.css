@@ -1,3 +1,10 @@
+menu {
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 body {
     background-color: pink;
 }
@@ -17,7 +24,8 @@ p {
 img {
     max-width: 100%;
   }
-.links{
+
+.box{
     
     text-align:center; 
 
@@ -26,19 +34,12 @@ img {
     border-color: white;
     background-color: white;
     font-size:larger;
-    max-width: 40%;
+    max-width: 100%;
     margin: 10px auto 0px auto;
     padding: 20px 0px 20px 0px;
 }
-.logoimg{
-    display: block;
-    max-width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-
-    border-style:solid;
-    border-radius: 10px;
-    border-color: white;
-    background-color: white;
-
+@media (min-width: 600px) {
+    .box{
+        width:40%
+    }
 }
